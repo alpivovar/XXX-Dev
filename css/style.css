@@ -114,6 +114,7 @@ label {
     max-width: 1605px;
     width: 100%;
     margin: 0;
+    padding-right: 15px;
 }
 
 .container_work {
@@ -295,9 +296,6 @@ ul li {
 }
 
 .building_image {
-    /* background-image: url(../img/our_works__image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
     max-width: 941px;
     width: 100%;
     display: flex;
@@ -499,6 +497,15 @@ summary:focus {
         display: flex;
     }
 
+    .first_screen__bg, .first_screen__video, .first_screen__video video {
+        height: 710px;
+    }
+
+    .first_screen__video video {
+        width: 100%;
+        object-fit: cover;
+    }
+
     .home__about_us__elem1 {
         flex-direction: column;
     }
@@ -560,7 +567,7 @@ summary:focus {
     }
 } 
 
-@media (min-width: 320px) and (max-width: 376px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .container_special, .container_work {
         padding-left: 15px;
         padding-right: 15px;
@@ -616,3 +623,60 @@ summary:focus {
     }
 }
 
+@media (min-width: 481px) and (max-width: 769px) {
+    .first_screen__bg, .first_screen__video, .first_screen__video video {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+    
+    .first_screen__video video {
+        height: 1079px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    ul li {
+        margin: 0 20px;
+    }
+
+    .how_we_work__wrapper {
+        flex-direction: column;
+    }
+
+    .how_we_work__text {
+        max-width: 100%;
+        margin: 0 auto 50px;
+    }
+
+    .image_1 {
+        display: flex;
+        position: relative;
+        max-width: 630px;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+    .image_2 {
+        display: flex;
+        position: absolute;
+        max-height: 600px;
+        height: 100%;
+        top: 52%;
+        right: 0;
+    }
+
+    .how_we_work__images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home__about_us__elem2 {
+        margin: 0;
+    }
+}
