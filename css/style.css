@@ -286,6 +286,7 @@ ul li {
     display: flex;
     font-size: 144px;
     font-weight: 900;
+    color: #333333;
 }
 
 .building_wrapper {
